@@ -20,6 +20,7 @@ int L = LOW;
 // State for button
 bool buttonState = false;
 bool stopTimer = true;
+bool forceReset = false;
 
 void setup()
 {
@@ -139,6 +140,9 @@ void loop()
     delay(2);
   }
   
+  // Force reset the alarm
+  forceReset = digitalRead(buttonPin);
+  
   getReady();
   
   timerValue--;
@@ -147,7 +151,7 @@ void loop()
   monitorStatus();
   
   // If time is up turn tone the Buzzer and LED
-  if (timerValue == 0) {
+  if (timerValue == 0 || forceReset == true) {
     timerIsUp();
   }
   
