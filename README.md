@@ -4,3 +4,6 @@ Project cooking time alarm with Arduino, BreadBoard, 4 LED, Buzzer, and Press Bu
 ## Sketch
 Created With Tinkercad
 <img src="https://raw.githubusercontent.com/bydzen/Cti413_cooking-time-alarm/main/sketch/cookingTimeAlarm.png" />
+
+Created With Fritzing
+<img src="https://raw.githubusercontent.com/bydzen/Cti413_cooking-time-alarm/main/sketch/fritzing-CTA.png" />
